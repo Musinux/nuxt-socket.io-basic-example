@@ -1,0 +1,31 @@
+{
+  "name": "socket-io-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon -r esm server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "nuxt": "^2.14.6",
+    "socket.io": "^3.0.3",
+    "socket.io-client": "^3.0.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
